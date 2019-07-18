@@ -85,8 +85,12 @@ const operation = (a, b, o) => {
 console.log(operation(2, 4, hatv));
 
 8. feladat:
+*/
+let readline = require('readline-sync');
 
-const genArr = (n, m) => {
+let n = readline.question('Give me the first number!');
+let m = readline.question('Give me the second number!');
+const genArr = () => {
   let arr = new Array(n);
   for (let i = 0; i < n; i++) {
     arr[i] = new Array(m);
@@ -104,4 +108,3 @@ const fillA = (arr) => {
   return arr;
 };
 console.log(fillA(arr));
-*/
