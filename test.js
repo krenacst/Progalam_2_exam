@@ -40,21 +40,32 @@ const div2 = () => {
 };
 div2();
 
-6. Metszet tétele:
-
-const metszet = (array1, array2) = > {
-    let result = [];
-    for (let i = 0; i < array1.length; i++) {
-    for (let j = 0; j < array2.length; j++) {
-        if (array1[i] === array2[j]) {
-            result.push(array2[j]);
-        }
+6. Metszet tétele: Két tömböt vár paraméterül és meghatározza a két tömb közös részét, azaz metszetét.
+*/
+const metszet = (array1, array2) => {
+  let result = [];
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[0] === array2[i]) {
+      result.push(array2[i]);
     }
-        }
-    return result;
-}
-console.log(metszet([1, 2, 3, 4, 5], [5, 6, 7, 8, 9]));
+    if (array1[1] === array2[i]) {
+      result.push(array2[i]);
+    }
+    if (array1[2] === array2[i]) {
+      result.push(array2[i]);
+    }
+    if (array1[3] === array2[i]) {
+      result.push(array2[i]);
+    }
+    if (array1[4] === array2[i]) {
+      result.push(array2[i]);
+    }
+  }
+  return result;
+};
 
+console.log(metszet([1, 2, 3, 4, 5], [5, 6, 2, 7, 1]));
+/*
 7. feladat:
 
 const add = (a, b) => {
