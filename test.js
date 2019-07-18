@@ -67,7 +67,7 @@ const metszet = (array1, array2) => {
 console.log(metszet([1, 2, 3, 4, 5], [5, 6, 2, 7, 1]));
 
 7. feladat:
-*/
+
 const add = (a, b) => {
   return a + b;
 };
@@ -83,7 +83,7 @@ const operation = (a, b, o) => {
   return o(a, b);
 };
 console.log(operation(2, 4, hatv));
-/*
+
 8. feladat:
 
 const genArr = (n, m) => {
