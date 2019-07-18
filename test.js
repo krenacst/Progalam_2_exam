@@ -82,7 +82,7 @@ const hatv = (a, b) => {
 const operation = (a, b, o) => {
   return o(a, b);
 };
-console.log(operation(9, 6, sub));
+console.log(operation(9, 6, mul));
 
 8. feladat:
 
